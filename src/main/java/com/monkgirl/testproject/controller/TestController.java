@@ -16,4 +16,9 @@ public class TestController {
     public String helloWorld() {
         return "Hello, World! Let's start the party!";
     }
+
+    @GetMapping("/today")
+    public String day(){
+        return "Today is Thursday!";
+    }
 }
