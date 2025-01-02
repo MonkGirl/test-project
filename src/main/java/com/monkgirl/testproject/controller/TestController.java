@@ -4,6 +4,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Map;
+
 /**
  * @author MissYoung
  * @version 0.1
@@ -20,5 +22,10 @@ public class TestController {
     @GetMapping("/today")
     public String day(){
         return "Today is Thursday! Yesterday is Christmas Day";
+    }
+
+    @GetMapping("/adjust")
+    public Map<String, String> adjust(){
+        return Map.of("name", "icarus", "age", "30");
     }
 }
