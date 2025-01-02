@@ -21,7 +21,7 @@ public class TestController {
 
     @GetMapping("/today")
     public String day(){
-        return "Today is Thursday! Yesterday is Christmas Day";
+        return "Nice day! Today is Thursday! Yesterday is Christmas Day";
     }
 
     @GetMapping("/adjust")
